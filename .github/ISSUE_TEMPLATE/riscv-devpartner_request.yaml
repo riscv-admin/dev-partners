@@ -39,16 +39,16 @@ body:
       label: Task Sub Category
       description: What is the required skillset?
       options:
-        - gcc
-        - binutils
-        - gdb
-        - intrinsics
-        - Java
-        - KVM
-        - ld
-        - llvm
-        - Linux kernel
-        - QEMU
-        - Spike
+        - label: gcc
+        - label: binutils
+        - label: gdb
+        - label: intrinsics
+        - label: Java
+        - label: KVM
+        - label: ld
+        - label: llvm
+        - label: Linux kernel
+        - label: QEMU
+        - label: Spike
     validations:
       required: false
