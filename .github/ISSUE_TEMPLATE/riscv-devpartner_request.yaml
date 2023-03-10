@@ -15,3 +15,21 @@ body:
       placeholder: ex. name, email@example.com
     validations:
       required: true
+  - type: dropdown
+    id: task-category
+    attributes:
+      label: Task Category
+      description: What is the required skillset?
+      options:
+        - Arch Tests
+        - Compilers/Toolchain
+        - Libraries
+        - Runtimes
+        - SAIL model
+        - Simulators
+        - Specification
+        - OS
+        - Proof of Concept
+        - Other
+    validations:
+      required: true
