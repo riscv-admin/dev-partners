@@ -37,7 +37,7 @@ body:
     id: task-subcategory
     attributes:
       label: Task Sub Category
-      description: What is the required skillset?
+      description: Select specific subcategories as needed.
       options:
         - label: gcc
         - label: binutils
@@ -50,5 +50,26 @@ body:
         - label: Linux kernel
         - label: QEMU
         - label: Spike
+    validations:
+      required: false
+  - type: dropdown
+    id: ratification-target
+    attributes:
+      label: Repository Description
+      description: Quarter and year of ratification.
+      options:
+        - 3Q2023
+        - 4Q2023
+        - 1Q2024
+        - 2Q2024
+        - 3Q2024
+        - 4Q2024
+    validations:
+      required: true
+  - type: textarea
+    id: sow
+    attributes:
+      label: Link to SOW
+      description: A link to the SOW document in Google Drive
     validations:
       required: false
