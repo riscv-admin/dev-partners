@@ -33,3 +33,22 @@ body:
         - Other
     validations:
       required: true
+  - type: checkboxes
+    id: task-subcategory
+    attributes:
+      label: Task Sub Category
+      description: What is the required skillset?
+      options:
+        - gcc
+        - binutils
+        - gdb
+        - intrinsics
+        - Java
+        - KVM
+        - ld
+        - llvm
+        - Linux kernel
+        - QEMU
+        - Spike
+    validations:
+      required: false
