@@ -7,3 +7,11 @@ body:
     attributes:
       value: |
         Please enter as much information as you can about the request.  Do not worry if you cannot complete everything.
+  - type: input
+    id: taskname
+    attributes:
+      label: Task Name
+      description: Simple description of the task
+      placeholder: ex. name, email@example.com
+    validations:
+      required: true
