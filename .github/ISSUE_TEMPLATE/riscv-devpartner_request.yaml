@@ -77,9 +77,9 @@ body:
     id: state
     attributes:
       label: State
-      description: Work item state:
+      description: Work item state
       options:
-        - new
+        - new (Default)
         - sow
         - planning
         - developing
@@ -92,10 +92,10 @@ body:
     id: status
     attributes:
       label: Status
-      description: Work item status:
+      description: Work item status
       options:
-        - Proceeding
-        - At risk
+        - As-planned (Default)
+        - At-risk
         - Blocked
         - Late
     validations:
