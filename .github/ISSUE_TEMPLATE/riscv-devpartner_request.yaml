@@ -1,7 +1,7 @@
 name: Development Partner Request
 description: This is the template to request a RISC-V Development Partner work.
 title: "[New DevPartner Request] - ADD A SHORT TITLE HERE"
-labels: ["new", "planning", "developing", "in review", "done"]
+labels: ["IITM", "PLCT", "RIOS", "Nambi", "10xE"]
 body:
   - type: markdown
     attributes:
@@ -55,7 +55,7 @@ body:
   - type: dropdown
     id: ratification-target
     attributes:
-      label: Repository Description
+      label: Ratification Target
       description: Quarter and year of ratification.
       options:
         - 3Q2023
@@ -71,5 +71,55 @@ body:
     attributes:
       label: Link to SOW
       description: A link to the SOW document in Google Drive
+    validations:
+      required: false
+  - type: dropdown
+    id: state
+    attributes:
+      label: State
+      description: Work item state:
+      options:
+        - new
+        - sow
+        - planning
+        - developing
+        - testing
+        - in review
+        - done
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: Work item status:
+      options:
+        - Proceeding
+        - At risk
+        - Blocked
+        - Late
+    validations:
+      required: true
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size
+      description: Estimated effort in single person months: S (<3 mos), M (3-6 mos), L (6-12 mos), XL (1-2 yrs), XXL (>2 yrs)
+      options:
+        - Small
+        - Medium
+        - Large
+        - Extra Large (XL)
+        - Extra Extra Large (XXL)
+    validations:
+      required: false
+  - type: checklist
+    id: waiveflag
+    attributes:
+      label: Waiver
+      description: If a waiver required for this work,  what type?
+      options:
+        - Label: Freeze waiver
+        - Lable: Ratification waiver
     validations:
       required: false
