@@ -7,12 +7,41 @@ body:
     attributes:
       value: |
         Please enter as much information as you can about the request.  Do not worry if you cannot complete everything.
-  - type: input
+  - type: dropdown
+    id: tech-group
+    attributes:
+      label: Technical Group
+      description: Which technical groups is requesting the work?
+      options:
+        - Applications & Tools HC
+        - Architecture Test SIG
+        - Code Size Reduction TG
+        - Crypto TG
+        - Debug TG
+        - Golden Model SIG
+        - ISA Infrastructure HC
+        - Privileged Softwrae HC
+        - Privileged Spec IC
+        - Security HC
+        - SOC Infrastructure HC
+        - Technology HC
+        - Unprivileged Spec IC
+        - Other
+    validations:
+      required: true  - type: input
     id: taskname
     attributes:
       label: Task Name
       description: Simple description of the task
       placeholder: ex. name, email@example.com
+    validations:
+      required: true
+  - type: input
+    id: tech-liason
+    attributes:
+      label: Technical Liason
+      description: Name (email) for technical liason
+      placeholder: ex. Jane Doe (email@example.com)
     validations:
       required: true
   - type: dropdown
