@@ -113,8 +113,8 @@ body:
         - Extra Extra Large (XXL)
     validations:
       required: false
-  - type: checklist
-    id: waiveflag
+  - type: checkboxes
+    id: waiverflag
     attributes:
       label: Waiver
       description: If a waiver required for this work,  what type?
