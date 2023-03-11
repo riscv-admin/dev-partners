@@ -28,7 +28,8 @@ body:
         - Unprivileged Spec IC
         - Other
     validations:
-      required: true  - type: input
+      required: true
+  - type: input
     id: taskname
     attributes:
       label: Task Name
