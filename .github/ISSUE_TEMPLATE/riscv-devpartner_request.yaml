@@ -119,7 +119,7 @@ body:
       label: Waiver
       description: If a waiver required for this work,  what type?
       options:
-        - Label: Freeze waiver
-        - Lable: Ratification waiver
+        - label: Freeze
+        - label: Ratification
     validations:
       required: false
