@@ -32,9 +32,9 @@ body:
   - type: input
     id: taskname
     attributes:
-      label: Task Name
-      description: Simple description of the task
-      placeholder: ex. name, email@example.com
+      label: ratification-pkg
+      description: Name of the ratification package used for the work.  (This name should be common for all requests of a given package.)
+      placeholder: ex. Code Size, Debug, Priv 1.12, Profiles, Scalar Krypto
     validations:
       required: true
   - type: input
@@ -107,24 +107,25 @@ body:
     id: state
     attributes:
       label: State
-      description: Work item state
+      description: Work item state.  New requests should be left as "new".
       options:
-        - new (Default)
-        - sow
-        - planning
-        - developing
-        - testing
-        - in review
-        - done
+        - New
+        - SOW
+        - Planning
+        - Developing
+        - Testing
+        - In Review
+        - Merging
+        - Done
     validations:
       required: true
   - type: dropdown
     id: status
     attributes:
       label: Status
-      description: Work item status
+      description: Work item status.  Items should be marked "As-planned" unless problems exist.
       options:
-        - As-planned (Default)
+        - As-planned
         - At-risk
         - Blocked
         - Late
@@ -151,5 +152,13 @@ body:
       options:
         - label: Freeze
         - label: Ratification
+    validations:
+      required: false
+  - type: input
+    id: pr-link
+    attributes:
+      label: Pull Request Info
+      description: This field should contain a link to the PR or mailing list patch submission
+      placeholder: ex. Jane Doe (email@example.com)
     validations:
       required: false
