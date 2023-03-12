@@ -1,7 +1,6 @@
 name: Development Partner Request
 description: This is the template to request a RISC-V Development Partner work.
-title: "[New DevPartner Request] - ADD A SHORT TITLE HERE"
-labels: ["IITM", "PLCT", "RIOS", "Nambi", "10xE"]
+title: "ADD A SHORT TITLE HERE"
 body:
   - type: markdown
     attributes:
@@ -99,15 +98,33 @@ body:
   - type: textarea
     id: sow
     attributes:
-      label: Link to SOW
-      description: A link to the SOW document in Google Drive
+      label: Statement of Work (SOW)
+      description: The SOW information should be completed for each of the **bold** fields.
+      value: |
+        **Component names:**
+        
+        **Requirements:**
+          (prose describing what has to be done and what the end result is)
+        
+        **Deliverables:**
+          - Component #1 and changes expected.
+          - Component #2 and changes expected.
+          ...
+        
+        **Acceptance Criteria:**
+          - Component #1 and measured result.
+          - Component #2 and measured result.
+          ...
+        
+        **Projected timeframe:** (best guess date)
+        
     validations:
       required: false
   - type: dropdown
     id: state
     attributes:
       label: State
-      description: Work item state.  New requests should be left as "new".
+      description: Work item state.  New requests should be left as _New_.
       options:
         - New
         - SOW
@@ -123,7 +140,7 @@ body:
     id: status
     attributes:
       label: Status
-      description: Work item status.  Items should be marked "As-planned" unless problems exist.
+      description: Work item status.  Items should be marked _As-planned_ unless problems exist.
       options:
         - As-planned
         - At-risk
@@ -154,11 +171,12 @@ body:
         - label: Ratification
     validations:
       required: false
-  - type: input
+  - type: textarea
     id: pr-link
     attributes:
       label: Pull Request Info
-      description: This field should contain a link to the PR or mailing list patch submission
-      placeholder: ex. Jane Doe (email@example.com)
+      description: This field should contain links to the PR or mailing list patch submissions
+      value: |
+        [PR #1](https://github.com/myproject/pulls/42)
     validations:
       required: false
