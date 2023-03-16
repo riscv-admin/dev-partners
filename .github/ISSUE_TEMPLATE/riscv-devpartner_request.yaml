@@ -120,47 +120,6 @@ body:
         
     validations:
       required: false
-  - type: dropdown
-    id: state
-    attributes:
-      label: State
-      description: Work item state.  New requests should be left as _New_.
-      options:
-        - New
-        - SOW
-        - Planning
-        - Developing
-        - Testing
-        - In Review
-        - Merging
-        - Done
-    validations:
-      required: true
-  - type: dropdown
-    id: status
-    attributes:
-      label: Status
-      description: Work item status.  Items should be marked _As-planned_ unless problems exist.
-      options:
-        - As-planned
-        - At-risk
-        - Blocked
-        - Late
-    validations:
-      required: true
-  - type: dropdown
-    id: size
-    attributes:
-      label: Size
-      description: Estimated effort in single person months -- S (<3 mos), M (3-6 mos), L (6-12 mos), XL (1-2 yrs), XXL (>2 yrs)
-      options:
-        - Small
-        - Medium
-        - Large
-        - Extra Large (XL)
-        - Extra Extra Large (XXL)
-    validations:
-      required: false
   - type: checkboxes
     id: waiverflag
     attributes:
