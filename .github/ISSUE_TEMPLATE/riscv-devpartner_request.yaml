@@ -1,7 +1,8 @@
 name: Development Partner Request
 description: This is the template to request a RISC-V Development Partner work.
-title: "ADD A SHORT TITLE HERE"
+title: "Brief description please"
 assignees: jjscheel
+labels: "Agenda Item"
 body:
   - type: markdown
     attributes:
