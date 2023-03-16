@@ -40,8 +40,8 @@ body:
     id: tech-liason
     attributes:
       label: Technical Liason
-      description: Name (email) for technical liason
-      placeholder: ex. Jane Doe (email@example.com)
+      description: Name (email) for technical liason.  Note: this person will be assigned to the issue along with the developer.
+      placeholder: ex. Jane Doe
     validations:
       required: true
   - type: dropdown
@@ -133,9 +133,9 @@ body:
   - type: textarea
     id: pr-link
     attributes:
-      label: Pull Request Info
+      label: Pull Request Details
       description: This field should contain links to the PR or mailing list patch submissions
-      value: |
+      placeholder: |
         [PR #1](https://github.com/myproject/pulls/42)
     validations:
       required: false
