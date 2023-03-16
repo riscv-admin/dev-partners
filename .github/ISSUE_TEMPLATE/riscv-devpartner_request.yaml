@@ -39,8 +39,8 @@ body:
   - type: input
     id: tech-liason
     attributes:
-      label: Technical Liason
-      description: Name (email) for technical liason.  Note: this person will be assigned to the issue along with the developer.
+      label: Technical Liaison
+      description: 'Name (email) for technical liaison.  Note: this person will be assigned to the issue along with the developer.'
       placeholder: ex. Jane Doe
     validations:
       required: true
