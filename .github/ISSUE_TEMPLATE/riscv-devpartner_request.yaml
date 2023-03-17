@@ -21,8 +21,10 @@ body:
         - Debug TG
         - Golden Model SIG
         - ISA Infrastructure HC
+        - Pointer Masking TG
         - Privileged Softwrae HC
         - Privileged Spec IC
+        - Profiles TG
         - Security HC
         - SOC Infrastructure HC
         - Technology HC
