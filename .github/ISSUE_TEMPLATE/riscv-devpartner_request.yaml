@@ -111,13 +111,13 @@ body:
           (prose describing what has to be done and what the end result is)
         
         **Deliverables:**
-          - Component #1 and changes expected.
-          - Component #2 and changes expected.
+          - Component_1 and changes expected.
+          - Component_2 and changes expected.
           ...
         
         **Acceptance Criteria:**
-          - Component #1 and measured result.
-          - Component #2 and measured result.
+          - Component_1 and measured result.
+          - Component_2 and measured result.
           ...
         
         **Projected timeframe:** (best guess date)
