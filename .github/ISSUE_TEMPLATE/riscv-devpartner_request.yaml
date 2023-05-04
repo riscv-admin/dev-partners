@@ -123,12 +123,13 @@ body:
         **Projected timeframe:** (best guess date)
         
         **SOW Signoffs:** (delete those not needed)
-          - Task group liaison sign-off date:
-          - Development partner sign-off date:
-          - ACT SIG sign-off date (if ACT work):
-          - Toolchains & Runtimes sign-off date (if gcc, LLVM, binutils, gdb work):
-          - Privileged SW HC sign-off date (if QEMU, KVM, kernel, or OS work):
-          - Application & Tools HC sign-off date (if POC or toolchain/library work):
+          - Task group liaison sign-off
+          - Development partner sign-off
+          - ACT SIG sign-off (if ACT work)
+          - Golden Model SIG sign-off (if SAIL work)
+          - Toolchains & Runtimes sign-off (if gcc, LLVM, binutils, gdb work)
+          - Privileged SW HC sign-off (if QEMU, KVM, kernel, firmware, or OS work)
+          - Application & Tools HC sign-off (if toolchain/library work)
         
     validations:
       required: false
