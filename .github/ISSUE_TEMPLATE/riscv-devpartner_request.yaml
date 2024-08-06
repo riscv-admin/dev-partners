@@ -99,6 +99,14 @@ body:
         - 4Q2024
     validations:
       required: true
+  - type: input
+    id: speclink
+    attributes:
+      label: spec-link
+      description: Link (likely GitHub release) to the specification for the work.
+      placeholder: https://github.com/riscv/...
+    validations:
+      required: true
   - type: textarea
     id: sow
     attributes:
