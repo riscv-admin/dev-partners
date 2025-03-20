@@ -91,12 +91,11 @@ body:
       label: Ratification Target
       description: Quarter and year of ratification.
       options:
-        - 3Q2023
-        - 4Q2023
-        - 1Q2024
-        - 2Q2024
-        - 3Q2024
-        - 4Q2024
+        - Already Ratified
+        - 1Q2025
+        - 2Q2025
+        - 3Q2025
+        - 4Q2025
     validations:
       required: true
   - type: input
@@ -127,8 +126,6 @@ body:
           - Component_1 and measured result.
           - Component_2 and measured result.
           ...
-        
-        **Projected timeframe:** (best guess date)
         
         **SOW Signoffs:** (delete those not needed)
           - Task group liaison sign-off
